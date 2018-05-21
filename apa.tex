@@ -1,19 +1,31 @@
-\documentclass[a4paper,man,natbib]{apa6}
+\documentclass[a4paper,man,natbib,floatsintext]{apa6}
 
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
+\usepackage[section]{placeins}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage[colorinlistoftodos]{todonotes}
+\usepackage{ragged2e}
 
-\title{How Air Pollution Affects People's Daily Life}
-\shorttitle{How Air Pollution Affects People's Daily Life}
+\title{How Air Pollution Affects People's Daily Activities}
+\shorttitle{How Air Pollution Affects People's Daily Activities}
 \author{Chuanqi Jiang}
 \affiliation{Tsinghua University}
 
-\abstract{Abstract here.}
+\authornote{
+Chuanqi Jiang, Department of Mathematics, Tsinghua University.\\
+Chuanqi Jiang is now at Department of Mathematics, Tsinghua University.\\
+This research was an assignment.\\
+\noindent
+Contact: jcq15@mails.tsinghua.edu.cn
+}
+
+\abstract{Abstract here}
 
 \begin{document}
+\renewcommand{\raggedright}{\leftskip=0pt \rightskip=0pt plus 0cm}
 \maketitle
 
 \section{Introduction}
@@ -21,6 +33,9 @@
 
 \section{Method}
 \input{method}
+\newpage
+\section{Results}
+\input{results}
 
 \newpage
 \section{References}
@@ -38,15 +53,7 @@
 %\caption{\label{fig:frog}This is a figure caption.}
 %\end{figure}
 
-%\begin{table}
-%\centering
-%\begin{tabular}{l|r}
-%Item & Quantity \\\hline
-%Widgets & 42 \\
-%Gadgets & 13
-%\end{tabular}
-%\caption{\label{tab:widgets}An example table.}
-%\end{table}
+
 
 %You can make lists with automatic numbering \dots
 
